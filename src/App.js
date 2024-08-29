@@ -12,7 +12,9 @@ function App({ complist}) {
 
   // Example function to update history after run
   const updateHistory = (newHistoryItem) => {
-    setHistory([...history, newHistoryItem]);
+    setHistory(
+      [...history,newHistoryItem]      
+    );
   };
 
   // Update Lists of Mid Area

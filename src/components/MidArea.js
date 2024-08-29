@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { connect } from "react-redux";
 import { addList } from "../FunctionalComp/midarea/actions";
 import { Droppable, Draggable } from "react-beautiful-dnd";
@@ -25,8 +25,9 @@ function MidArea({ area_list, add_list, event_values,updateHistory }) {
   const handleClick = (arr, id) => {
     if (arr.length === 0) return;
 
-    // Add current list to history
-    updateHistory({ id, comps: arr });
+  // Example function to update history after run
+  updateHistory({ id, comps: arr })
+
 
     let i = 0;
     let repeat = 1;
