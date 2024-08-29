@@ -7,8 +7,20 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^6.0.0",
+    "@reduxjs/toolkit": "^1.6.1",
+    "mit-scratch": "file:",
+    "notistack": "^1.0.10",
     "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "scratch-starter-project": "file:",
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
