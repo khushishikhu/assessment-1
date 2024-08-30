@@ -26,7 +26,7 @@ function MidArea({ area_list, add_list, event_values,updateHistory }) {
     if (arr.length === 0) return;
 
   // Example function to update history after run
-  updateHistory({ id, comps: arr })
+  updateHistory({ id, arr })
 
 
     let i = 0;
@@ -124,7 +124,7 @@ function MidArea({ area_list, add_list, event_values,updateHistory }) {
                               variant="contained"
                               color="primary"
                               startIcon={<PlayArrowIcon />}
-                              onClick={() => handleClick(l.comps, l.id)}
+                              onClick={() => handleClick([...l.comps], l.id)}
                             >
                               Run{" "}
                             </Button>

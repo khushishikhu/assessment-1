@@ -8,13 +8,12 @@ import HistoryArea from "./components/HistoryArea";
 
 
 function App({ complist}) {
-  const [history, setHistory] = useState([]);
 
+  const [history, setHistory] = useState([]);
+  console.log("khushi history",history)
   // Example function to update history after run
   const updateHistory = (newHistoryItem) => {
-    setHistory(
-      [...history,newHistoryItem]      
-    );
+    setHistory((prevHistory) => [...prevHistory, newHistoryItem]);
   };
 
   // Update Lists of Mid Area

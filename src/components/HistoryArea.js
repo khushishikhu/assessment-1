@@ -97,7 +97,7 @@ function HistoryArea({ history }) {
                   </div>
 
                   <ul className="w-48 h-full">
-                    {h.comps.map((x, i) => {
+                    {h.arr.map((x, i) => {
                       let component_id = `comp${x}-${h.id}-${i}`;
                       return (
                         <li key={`${x}-${h.id}-${i}`}>
